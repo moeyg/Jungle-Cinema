@@ -1,5 +1,5 @@
 # Jungle-Cinema
-![Untitled](https://user-images.githubusercontent.com/102715022/167303887-ae4af62f-a43e-4b40-a532-0f6fe495525b.png)
+![Untitled](https://user-images.githubusercontent.com/102715022/167303940-f91a5647-ed02-4552-8692-1ea12cb2de17.jpeg)
 <br>
 
 🏷 <b>Skill</b>
