@@ -1,0 +1,245 @@
+@import url(reset.css);
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transparent;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-page {
+  width: 1060px;
+  height: 1170px;
+  margin-top: 91px;
+  border: 2px solid #bdbdbd;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 41px 0 37px;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.jungle-cinema__nav .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.jungle-cinema__nav .nav__list {
+  padding: 30px;
+}
+
+.jungle-cinema__nav .now-in-theaters {
+  color: black;
+}
+
+.jungle-cinema__movie {
+  width: 1003px;
+  height: 962px;
+  background-color: white;
+  margin: 0 28px 30px;
+  padding: 27px;
+  border: 2px solid #bdbdbd;
+  border-radius: 10px;
+}
+
+.jungle-cinema__movie .movie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.jungle-cinema__movie .movie__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 225px;
+  padding: 20px 20px 0;
+  border: 2px solid #bdbdbd;
+  border-radius: 10px;
+}
+
+.jungle-cinema__movie .movie__list--poster {
+  width: 180px;
+  height: 250px;
+  border: 1px solid #bdbdbd;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.jungle-cinema__movie .movie__list--title {
+  font-size: 16px;
+  font-weight: 900;
+  width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 12px 0;
+}
+
+.jungle-cinema__movie .movie__list--info {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.jungle-cinema__movie .movie__list--info .summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jungle-cinema__movie .movie__list--info div {
+  display: flex;
+  gap: 5px;
+}
+
+.jungle-cinema__movie .movie__list--info dt {
+  color: #bdbdbd;
+  padding-bottom: 7px;
+}
+
+.jungle-cinema__movie .movie__list .star-img::before {
+  content: '';
+  display: absolute;
+  padding: 0 9px;
+  background-image: url(../images/star-img.svg);
+  background-repeat: no-repeat;
+}
+
+.jungle-cinema__movie .movie__list--link {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px -20px 0;
+  border-top: 1px solid #bdbdbd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+
+.jungle-cinema__movie .movie__list--link {
+  display: flex;
+  justify-content: center;
+}
+
+.jungle-cinema__movie .movie__list--link .movie__list--reservation,
+.jungle-cinema__movie .movie__list--link .movie__list--trailer {
+  padding: 12px 27px;
+}
+
+.jungle-cinema__movie .movie__list--trailer {
+  border-left: 1px solid #bdbdbd;
+}
+
+.jungle-cinema__movie .movie__list--trailer::before {
+  content: '';
+  display: absolute;
+  padding: 0 9px;
+  background-image: url(../images/play-btn.svg);
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 135px;
+}
+
+.company .company__profile {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 120px;
+  padding: 53px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.company__profile .company__profile--co {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.company__profile .company__profile--sns .sns-list {
+  display: flex;
+  gap: 30px;
+}
+
+.company__profile .company__profile--sns .sns-link__img::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+}
+.company__profile .company__profile--sns .sns-link__twitter::before {
+  background-image: url(../images/sns-icon/twitter.svg);
+}
+.company__profile .company__profile--sns .sns-link__instagram::before {
+  background-image: url(../images/sns-icon/instagram.svg);
+}
+.company__profile .company__profile--sns .sns-link__facebook::before {
+  background-image: url(../images/sns-icon/facebook.svg);
+}
+
+.company__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 120px;
+  padding: 36px 0;
+  font-size: 14px;
+  color: #4f4f4f;
+}
+
+.company__info .company__info--details {
+  display: flex;
+  gap: 15px;
+}
+
+.company__info .company__info--details div {
+  display: flex;
+  gap: 3px;
+  padding-right: 10px;
+  border-right: 1px solid #4f4f4f;
+}
+
+.company__info .company__info--details div:last-child {
+  border-right: none;
+}
+
+.company__info .company__info--details dt,
+.company__info--copyright {
+  font-weight: 700;
+}
