@@ -21,4 +21,8 @@
 
 <br>
 
-## 📌 Point to fix
+## ⚙️ TBU
+
+<ul>
+  <li>Grid를 이용해 레이아웃을 배치하기</li>
+</ul>
